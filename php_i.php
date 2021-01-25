@@ -1,14 +1,12 @@
 ﻿<?php 
 # من تنشر لا تغير حقوق عزيزي 
 #قدر تعب غيرك لتعدل وكلت صار الي 
-#هدوووووووووووووووووووء 
-
-# @php_i or @dev_a or @dev_a
+#
 ob_start();
-$API_KEY = '605245411:AAFz14jJl0K1yTfYt0HfFZFp98dZk2qV61E'; //add your bot token
-$sudo = 612393384; // add your id
-$bot_id = 605245411; 
-$e = "@i9ii_bot";
+$API_KEY = '"605245411":AAFz14jJl0K1yTfYt0HfFZFp98dZk2qV61E'; //add your bot token
+$sudo = "1416859590"; // add your id
+$bot_id = "1586676802"; 
+$e = "@oo_569";
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -97,8 +95,8 @@ if(in_array($text, $commands) and $bot != "administrator"){
   'reply_to_message_id'=>$mid
     ]);
 }
-#     dev:- @dev_i or @dev_a or @ailnoor  #    CH:- @php_i         #
-$get = file_get_contents("https://api.telegram.org/bot$API_KEY/getChatMember?chat_id=$chat_id&user_id=".$from_id);
+#     #
+$get = file_get_contents("".$from_id);
 $info = json_decode($get, true);
 $you = $info['result']['status'];
 $gp_get = file_get_contents("data/groups.txt");
@@ -106,7 +104,7 @@ $groups = explode("\n", $gp_get);
 $admin = 612393384; // your id ;
 
 if($text == "/start"){$from_id = $message->from->id;
-$ch = "@php_i";
+$ch = "@oo_569";
 $join = file_get_contents("https://api.telegram.org/bot".API_KEY."/getChatMember?chat_id=$ch&user_id=".$from_id);
 if($message && (strpos($join,'"status":"left"') or strpos($join,'"Bad Request: USER_ID_INVALID"') or strpos($join,'"status":"kicked"'))!== false){
 bot('sendMessage', [
@@ -116,12 +114,9 @@ bot('sendMessage', [
 يجب الاشتراك في قناة البوت .📡 اولاََ 
 لـ استخدام البوت 💯
 ",
-'reply_markup'=>json_encode([
-'inline_keyboard'=>[
-[['text'=>"اضغط هنا لـلأشتراك 📮", 'url'=>"https://telegram.me/php_i"]]    
-]    
-])
-]);return false;}
+
+[['text'=>"اضغط هنا لـلأشتراك 📮",    
+]    }
 bot('sendMessage',[
 'chat_id'=>$chat_id, 
     'text'=>"≈ اهلآ وسهلآ بڪ في بوت الحماية👨🏻‍💻
@@ -134,9 +129,9 @@ bot('sendMessage',[
 
 ≈ تــ۾ تــطوير هذٱ البــوت من قبــل🗯
 
-≈ 『مــطــﯢر ﺄلبوت』 @dev_a 👨🏻‍🔧",'reply_markup'=>json_encode(['inline_keyboard'=>[
+≈ 『مــطــﯢر ﺄلبوت』 @oo_569 👨🏻‍🔧",'reply_markup'=>json_encode(['inline_keyboard'=>[
         [['text'=>"• اضغط هنا لإضافتي إلى مجموعتك •",'url'=>"telegram.me/i9ii_bot?startgroup=new"]],
-        [['text'=>"💡اضـغـط هـنا من فضـلڪ💡", 'url'=>"telegram.me/$dev_i"]]]])]);}
+        [['text'=>"💡اضـغـط هـنا من فضـلڪ💡",}
             
 if ($new and $new->id == $bot_id) { bot('sendMessage',[ 'chat_id'=>$chat_id,'text'=>"ــم بــرفــعــي مشــرف أولآ⚠️
 وارســل ڪلمــة تفــعيل اﯛ  ⏸",]);}
@@ -249,7 +244,7 @@ $re_user    = $update->message->reply_to_message->from->username;
         'user_id'=>$re_id
       ]);
     }
-    #     dev:- @dev_i or @dev_a or @ailnoor  #    CH:- @php_i         #
+    #     dev:- @dev_i or @dev_a or @ailnoor  #    CH:- @oo_569         #
   if($text == "/promote" or $text == "رفع ادمن"){
       bot('sendMessage',[
         'chat_id'=>$chat_id,
@@ -496,7 +491,8 @@ if($text == "/lock bots" or $text == "قفل الدردشه"){
         'text'=>"• تـ໋͟مـہ فـْٰـٖتــູཻـح الـٰـدردشـُِــٰـُِﮬ̲̐هہ‏ ؛ 🤹🏿‍♂️⇣‘️",
   'reply_to_message_id'=>$mid,]);}
   
-#     dev:- @dev_i or @dev_a  #    CH:- @php_i         #  
+#     
+   #  
   
   if($text == "/lock bots" or $text == "قفل متحرك"){
     file_put_contents("data/$chat_id.txt", "$photo1\n$sticker1\n$contact1\n$doc1\n$fwd1\n$bsma1\n$link1\n$audio1\n$voice1\n$tag1\n$mark1\n$bots1\n$cha1\n1");
@@ -514,7 +510,7 @@ if($text == "/lock bots" or $text == "قفل الدردشه"){
   
 #هذاه الامر كامل بس عدل عليه شويه 
  ////////////////////////////// new
- #     dev:- @dev_i or @dev_a  #    CH:- @php_i         #
+ #             #
    if($text=="/help" or $text=="الاوامر" or $text=="اوامر"){
     bot('sendMessage',[
         'chat_id'=>$chat_id,
@@ -539,7 +535,7 @@ if($text == "/lock bots" or $text == "قفل الدردشه"){
 لعرض الوقت بدقه 🚩
 
 ֆ • • • • • • • • • • • • • ֆ
-تطوير 🔅 :- @php_i 📍",]);}
+تطوير 🔅 :- @oo_569 📍",]);}
    if($text=="اوامر الفتح" or $text=="م2"){
     bot('sendMessage',[
       'chat_id'=>$chat_id,
@@ -569,7 +565,7 @@ if($text == "/lock bots" or $text == "قفل الدردشه"){
 | الكل🚸
 
 ֆ • • • • • • • • • • • • • ֆ
-تطـوير 💡 :- @php_i 📍",]); }
+تطـوير 💡 :- @oo569 📍",]); }
 
    if($text=="اوامر القفل" or $text=="م1"){
     bot('sendMessage',[
@@ -600,8 +596,8 @@ if($text == "/lock bots" or $text == "قفل الدردشه"){
 | الكل🚸
 
 ֆ • • • • • • • • • • • • • ֆ
-تطـوير 💡 :- @php_i 📍",]);}}
-#     dev:- @dev_i or @dev_a  #    CH:- @php_i         #
+تطـوير 💡 :- @oo_569📍",]);}}
+#            #
 
    if($text=="الاوامر الاخرى" or $text=="اوامر اخرى" or $text=="م3"){
     bot('sendMessage',[
@@ -703,7 +699,7 @@ if($text=="/setting" or $text=="اعدادات" or $text=="الاعدادات"){
 🗯┇الماركدون ~⪼ $mark1
 📟┇البوتات ~⪼ $bots1
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉",]);}}
-#     dev:- @dev_i or @dev_a  #    CH:- @php_i         #
+#     dev:-      #
 if($bot == "administrator"){
  if ($you == "administrator" or $you == "creator") {
 if($text == "/add" or $text == "/add$e" or $text=="تفعيل"){
@@ -760,7 +756,7 @@ bot('sendMessage',[
 'reply_to_message_id'=>$message->message_id, 
 ]);
 }
-#     dev:- @dev_i or @dev_a  #    CH:- @php_i         #
+#              #
 if($text == "الاحصائيات" and $chat_id == $sudo){
 $c = count($groups);
 bot('sendMessage',[
@@ -786,7 +782,7 @@ bot('sendmessage',[
 🎗¦ رتبتك : منشئ المجموعة 🛠
 🎫¦ ايدي المجموعه : ( $chat_id )
 📨¦ رسائل المجموعة : $message->message_id
-🏌🏻¦ مـطـور البوت : @php_i
+🏌🏻¦ مـطـور البوت : @oo_569
 👨🏽‍🔧
 ",
 'reply_to_message_id'=>$message->message_id, 
@@ -803,7 +799,7 @@ bot('sendmessage',[
 🎗¦ رتبتك : ادمن المجموعة 🛠
 🎫¦ ايدي المجموعه : ( $chat_id )
 📨¦ رسائل المجموعة : $message->message_id
-🏌🏻¦ مـطـور البوت : @php_i
+🏌🏻¦ مـطـور البوت : @oo_569
 👨🏽‍🔧",
 'reply_to_message_id'=>$message->message_id, 
 ]);
@@ -820,7 +816,7 @@ bot('sendmessage',[
 🎗¦ رتبتك : عضو المجموعة 🛠
 🎫¦ ايدي المجموعه : ( $chat_id )
 📨¦ رسائل المجموعة : $message->message_id
-🏌🏻¦ مـطـور البوت : @php_i
+🏌🏻¦ مـطـور البوت : @oo_569
 👨🏽‍🔧",
 'reply_to_message_id'=>$message->message_id, 
 ]);
